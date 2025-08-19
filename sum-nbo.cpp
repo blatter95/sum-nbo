@@ -9,7 +9,7 @@ int main(int argc, char* argv[]) {
     FILE *fp;
 
     for (int i = 1; i < argc; i++) {
-        // file open
+        // file open (binary read Mod)
         fp = fopen(argv[i], "rb");
         if (fp == NULL) {
             printf("Error: Could not file open: %s\n", argv[i]);
